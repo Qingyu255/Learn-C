@@ -45,6 +45,12 @@ int main(void) {
     // Copying a string:
     // You can’t copy a string through the assignment operator (=). All that does is make a copy of the pointer to the first character… so you end up with two pointers to the same string:
     // char *h = "Hello, world!";// know why this is wrong if you want to modify h as Dereferencing a pointer to a string literal results in a segmentation fault because you are trying to write to a read-only memory segment.
+    // What is a seg fault:
+        // Hardware fault raised by the hardware when we attempt to
+        // access memory that we should not.
+        // ● Then, switch control to the OS and we follow our fault handling
+        // plan.
+        // ○ (in this case, kill the program).
     char h[] = "Hello, world!";
     char *t;
 
